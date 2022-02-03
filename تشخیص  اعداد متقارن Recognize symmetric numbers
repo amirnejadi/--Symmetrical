@@ -1,0 +1,33 @@
+ int main()
+{
+int num,a,i,e,d,b=0,c=1;
+cout<<"enter a number : ";
+cin>>num;
+d=num;
+while(d !=0){
+ d/=10;
+  ++b;
+}
+for (i = 1; i < b; i++) {
+   c *=10;
+}
+b /=2;
+for (i = 0; i < b ; i++) {
+ a=num%10;
+ e=num/c;
+ num %=c;
+ num/=10;
+
+
+ c/=100;
+
+if (a!=e) {
+ cout<<"no motegharen";
+goto a;
+ }
+}
+cout<<"motegharen";
+a:
+getch();
+ return 0;
+}
